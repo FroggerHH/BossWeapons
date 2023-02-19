@@ -40,7 +40,7 @@ namespace BossWeapons
             Arbalest.Crafting.Add(CraftingTable.Forge, 1);
             Arbalest.RequiredItems.Add("TrophyAbomination", 1);
             Arbalest.RequiredItems.Add("Root", 10);
-            Arbalest.RequiredItems.Add("Gusk", 10);
+            Arbalest.RequiredItems.Add("Guck", 10);
             Arbalest.RequiredUpgradeItems.Add("Root", 5);
             Arbalest.Configurable = Configurability.Full;
 
@@ -151,18 +151,17 @@ namespace BossWeapons
             TrollShield.RequiredUpgradeItems.Add("BoneFragments", 10);
             TrollShield.Configurable = Configurability.Full;
 
-            /*Item item = new("lunchbox", "");
-            item.Name
+            Item QueenFists = new("lunchbox", "JF_QueenFistsLunchbox");
+            QueenFists.Name
+                .English("QueenFists")
+                .Russian("Кулаки королевы");
+            QueenFists.Description
                 .English("")
                 .Russian("");
-            item.Description
-                .English("")
-                .Russian("");
-            item.Crafting.Add(CraftingTable.Forge, 1);
-            item.RequiredItems.Add("TrophyDragonQueen", 1);
-            item.RequiredItems.Add("Silver", 5);
-            item.RequiredUpgradeItems.Add("Silver", 5);
-            item.Configurable = Configurability.Full;*/
+            QueenFists.Crafting.Add(CraftingTable.Forge, 1);
+            QueenFists.RequiredItems.Add("Iron", 10);
+            QueenFists.RequiredUpgradeItems.Add("Iron", 5);
+            QueenFists.Configurable = Configurability.Full;
         }
 
         internal void Debug(string msg)
